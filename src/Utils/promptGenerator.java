@@ -1,10 +1,11 @@
 package Utils;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 public class promptGenerator {
     Scanner sc =  new Scanner(System.in);
-    public String getInput(String prompt){
+    public String getStringInput(String prompt){
         System.out.println(prompt);
         String inputString = sc.next();
 
@@ -14,5 +15,8 @@ public class promptGenerator {
         promptGenerator pG = new promptGenerator();
         String output = pG.getInput("Enter a vehicle");
          */
+    }
+    public String getInput(){
+        return sc.next();
     }
 }
